@@ -19,7 +19,7 @@ class Pages extends Component{
     componentDidMount(){
         this.props.FetchGiphy(this.props.location.state.cari)
         this.setState({search:this.props.location.state.cari})
-        document.title = this.props.location.state.cari===""?"Iron Man Giphy":"Search Your Giphy"
+        document.title = this.props.location.state.cari==="Iron Man"?"Iron Man Giphy":"Search Your Giphy"
 
     }
 
